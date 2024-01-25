@@ -1,0 +1,126 @@
+:root {
+  --transparent: transparent;
+  --black: #000000;
+  --white: #ffffff;
+  --primary: #44e672;
+  --secondary: #6eb883;
+  --body: #455b4c;
+  --heading: #46925e;
+  --transition-basic: all 250ms linear;
+  --font-family-body: 'Comfortaa', sans-serif;
+  --font-family-heading: 'Bree Serif', serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  font-family: var(--font-family-body);
+  color: var(--body);
+  text-transform: lowercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-heading);
+  color: var(--heading);
+}
+
+a {
+  color: var(--body);
+  transition: var(--transition-basic);
+}
+
+img {
+  width: 100%;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.moved-header {
+  width: 100%;
+  background-color: var(--transparent);
+  padding: 16px 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 102px;
+  z-index: 10;
+}
+
+.moved-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.moved-header-logo {
+  width: 172px;
+}
+
+.moved-header-logo:hover {
+  transform: scale(0.95);
+}
+
+.moved-header-nav {
+  display: flex;
+  gap: 0 16px;
+}
+
+.moved-header-nav a {
+  text-transform: lowercase;
+  font-weight: 700;
+}
+
+.moved-highlight {
+  position: relative;
+  padding: 148px 208px;
+  width: 100%;
+  background-image: url('assets/images/destaque.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 25%;
+  min-height: 65vh;
+}
+
+.moved-highlight::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  opacity: 0.75;
+}
+
+.moved-highlight-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 24px 0;
+}
+
+.moved-highlight-container h1 {
+  font-size: 48px;
+  text-shadow: 0 0 24px var(--white);
+}
