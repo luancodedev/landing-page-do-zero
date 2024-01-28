@@ -9,6 +9,10 @@
   --transition-basic: all 250ms linear;
   --font-family-body: 'Comfortaa', sans-serif;
   --font-family-heading: 'Bree Serif', serif;
+  --font-size-small: 0.875rem;
+  --font-size-default: 1rem;
+  --font-size-medium: 1.125rem;
+  --font-size-large: 1.25rem;
 }
 
 * {
@@ -23,6 +27,7 @@ body {
   font-family: var(--font-family-body);
   color: var(--body);
   text-transform: lowercase;
+  font-size: var(--font-size-default);
 }
 
 h1,
@@ -123,4 +128,24 @@ a:hover {
 .moved-highlight-container h1 {
   font-size: 48px;
   text-shadow: 0 0 24px var(--white);
+}
+
+.btn {
+  border-radius: 8px;
+  outline: none;
+  padding: 12px 24px;
+  text-align: center;
+  text-transform: lowercase;
+  font-weight: 700;
+  font-size: var(--font-size-small);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary);
+  color: var(--white);
 }
