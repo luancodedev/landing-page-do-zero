@@ -23,6 +23,10 @@
   outline: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-family-body);
   color: var(--body);
@@ -38,6 +42,7 @@ h5,
 h6 {
   font-family: var(--font-family-heading);
   color: var(--heading);
+  text-transform: lowercase;
 }
 
 a {
@@ -148,4 +153,36 @@ a:hover {
 .btn-primary:hover {
   background-color: var(--secondary);
   color: var(--white);
+}
+
+.moved-about {
+  width: 100%;
+  background-color: var(--white);
+  padding: 80px 0;
+}
+
+.moved-about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 56px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.moved-about-img img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 9999px;
+}
+
+.moved-about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0;
+}
+
+.moved-about-content h2 {
+  font-size: 28px;
 }
