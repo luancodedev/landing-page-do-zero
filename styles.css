@@ -9,6 +9,7 @@
   --transition-basic: all 250ms linear;
   --font-family-body: 'Comfortaa', sans-serif;
   --font-family-heading: 'Bree Serif', serif;
+  --font-size-smaller: 0.75rem;
   --font-size-small: 0.875rem;
   --font-size-default: 1rem;
   --font-size-medium: 1.125rem;
@@ -131,7 +132,7 @@ a:hover {
 }
 
 .moved-highlight-container h1 {
-  font-size: 48px;
+  font-size: 3rem;
   text-shadow: 0 0 24px var(--white);
 }
 
@@ -155,7 +156,7 @@ a:hover {
   color: var(--white);
 }
 
-.moved-about {
+.default-section {
   width: 100%;
   background-color: var(--white);
   padding: 80px 0;
@@ -183,14 +184,12 @@ a:hover {
   gap: 16px 0;
 }
 
-.moved-about-content h2 {
-  font-size: 28px;
+.section-title {
+  font-size: 1.75rem;
 }
 
 .moved-services {
-  width: 100%;
   background-color: var(--secondary);
-  padding: 80px 0;
 }
 
 .moved-services-container {
@@ -225,22 +224,22 @@ a:hover {
   top: 8px;
   left: 0;
   right: 0;
-  width: 30%;
+  width: 15%;
   height: 6px;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: var(--secondary);
   border-radius: 6px;
 }
 
 .moved-services-item-content h3 {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-wrap: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
 .moved-services-item-content p {
-  font-size: 14px;
+  font-size: var(--font-size-small);
   line-height: 1.35;
 }
 
@@ -251,4 +250,60 @@ a:hover {
 
 .moved-services-item:hover .moved-services-item-content h3 {
   text-wrap: wrap;
+}
+
+.moved-testimonials h2 {
+  text-align: center;
+}
+
+.moved-testimonials-container {
+  width: 75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding-top: 32px;
+}
+
+.moved-testimonials-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px 0;
+  border-radius: 8px;
+  padding: 16px 24px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  align-items: center;
+  text-align: center;
+}
+
+.moved-testimonials-item figure {
+  width: 96px;
+  height: 96px;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.moved-testimonials-item img {
+  width: 100%;
+}
+
+.moved-testimonials-item h4 {
+  font-size: var(--font-size-medium);
+}
+
+.moved-testimonials-item small {
+  font-size: var(--font-size-smaller);
+  color: var(--secondary);
+}
+
+.moved-testimonials-item p {
+  font-size: var(--font-size-small);
+}
+
+.moved-testimonials-item p:before,
+.moved-testimonials-item p:after {
+  content: '"';
+  font-size: 32px;
+  line-height: 0;
+  color: var(--secondary);
 }
