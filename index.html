@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Comfortaa:wght@400;700&display=swap"
     rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -19,6 +20,14 @@
     <div class="container">
       <div class="moved-header-container">
         <a href="#" class="moved-header-logo"><img src="assets/images/logo.svg" alt="Moved"></a>
+
+        <input type="checkbox" id="menu-mobile-trigger" class="moved-header-trigger-checkbox">
+        <label for="menu-mobile-trigger" class="moved-header-trigger-action">
+          <i class='bx bx-menu'></i>
+        </label>
+        <label for="menu-mobile-trigger" class="moved-header-trigger-action">
+          <i class='bx bx-x'></i>
+        </label>
 
         <nav class="moved-header-nav">
           <a href="#sobre">Sobre</a>
