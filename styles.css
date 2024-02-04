@@ -402,6 +402,10 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
+  .moved-header {
+    padding: 16px;
+  }
+
   .moved-header-nav {
     transition: transform 400ms ease-in-out;
     position: fixed;
@@ -432,6 +436,24 @@ a:hover {
   }
 
   .moved-about-container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .moved-about-content {
+    text-align: center;
+  }
+
+  .moved-services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .moved-testimonials-container {
+    grid-template-columns: 1fr;
+  }
+
+  .moved-contact-form {
     width: 100%;
   }
 }
